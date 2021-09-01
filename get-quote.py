@@ -10,7 +10,9 @@ def print_a_line():
   last = len(quotes) - 1
   rnd = random.randint(0, last)
 
-  print(quotes[rnd])
+  for i in range(rnd): 
+    print(quotes[rnd])
+    rnd = random.randint(0, last)
 
 if __name__== "__main__":
   print_a_line()
